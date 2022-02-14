@@ -36,4 +36,4 @@ Four different scripts can be used to create the results graphs. The files to cr
 [roc_curve](process_results/roc_curve.py) creates ROC graphs from results saved in ``./facenet/results/facenet/`` and these folders with test results should be named perm_NUMBER_NETWORKNAME with NUMBER and NETWORKNAME replaced with 1,2,3,4 and classifier_nopretrain, classifier_pretrain, triplet_nopretrain, triplet_pretrain. [demo_roc_curve](process_results/demo_roc_curve.py) can be used to do the same for the demographic group experiments and the folders in in results/facenet should be named age_old, gender_male, gender_female, skin_color_dark, skin_color_very_fair. 
 
 ## Models
-The models created can be found in the (models)[models] folder.
+The pre-trained models used for this research can be downloaded [here](https://drive.google.com/file/d/1EXPBSXwTaqrSC0OhUdXNmKSh9qJUQ55-) and [here](https://drive.google.com/file/d/0B5MzpY9kBtDVZ2RpVDYwWmxoSUk) for the classifier and triplet modes respectively.
