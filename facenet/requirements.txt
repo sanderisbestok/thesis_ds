@@ -1,8 +1,11 @@
-scipy
-scikit-learn
+tensorflow-gpu==1.14
+scipy==1.1.0
+scikit-learn==0.24.2
 opencv-python
 h5py
-matplotlib
+matplotlib==3.3.4
 Pillow
 requests
 psutil
+cython
+
