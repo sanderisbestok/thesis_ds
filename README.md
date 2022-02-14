@@ -27,3 +27,13 @@ These instructions are made to work with the LISA cluster.
 
 ## Experiments
 All commands to start the jobs for training and testing can be found in the [Job Scripts](job_scripts) folder
+
+## Create results graphs
+Four different scripts can be used to create the results graphs. The files to create these graphs are created when using the adjusted version of FaceNet.
+
+[accuracy_graph](process_results/accuracy_graph.py) can be used to create the accuracy graphs from the training phase from the files saved in ``./facenet/logs/facenet/`` the log folders should be renamed to start with perm_1 or one of the other permutations to make the graphs. [demo_accuracy_graph.py](process_results/demo_accuracy_graph.py) does the same but for the demographic groups, these should start with skin_color_dark, skin_color_very_fair, gender_male, gender_female and age_old to create the right grahps.
+
+[roc_curve](process_results/roc_curve.py) creates ROC graphs from results saved in ``./facenet/results/facenet/`` and these folders with test results should be named perm_NUMBER_NETWORKNAME with NUMBER and NETWORKNAME replaced with 1,2,3,4 and classifier_nopretrain, classifier_pretrain, triplet_nopretrain, triplet_pretrain. [demo_roc_curve](process_results/demo_roc_curve.py) can be used to do the same for the demographic group experiments and the folders in in results/facenet should be named age_old, gender_male, gender_female, skin_color_dark, skin_color_very_fair. 
+
+## Models
+The models created can be found in the (models)[models] folder.
