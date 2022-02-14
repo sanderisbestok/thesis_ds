@@ -20,4 +20,10 @@ The code found in this repository is the code used for this thesis. Next to the 
 - Execute script [4](data_preparation/5_generate_pairs.py) use this script to create the test pairs, adjust script and use folder for a permuation in line 19 and 49
 
 ## Facenet
-- To install facenet first use the instructions in [here](facenet_README.md)
+These instructions are made to work with the LISA cluster.
+- Use the FaceNet version which can be found [here](facenet) 
+- Install dependencies from [requirements.txt](facenet/requirements.txt)
+- Set the pythonpath ``export PYTHONPATH=[...]/facenet/src``
+
+## Experiments
+All commands to start the jobs for training and testing can be found in the [Job Scripts](job_scripts) folder
